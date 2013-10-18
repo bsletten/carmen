@@ -48,7 +48,7 @@ S3.terms = function(doc) {
 S3.prototype.search = function(query, id, callback) {
     if (!this.data) return callback(new Error('Tilesource not loaded'));
     if (!this.client) {
-        console.log("client missing."); //CDJ
+        console.log("client missing.  carmen."); //CDJ
         console.trace();    //CDJ
         return callback(new Error('No S3 client found'));
     }
